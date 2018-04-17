@@ -16,7 +16,7 @@ knitr::opts_chunk$set(echo = FALSE)
  instances to be plotted and max and min values of the x and y used in the graph. 
  
 
-## What does the App do?
+ What does the App do?
 
 In this app, A slider is placed in sliderPanel which can be used to set the maximum and minimum values of the x and y axes. In mainPanel, a graph is made sepal length v/s sepal width. 
 
