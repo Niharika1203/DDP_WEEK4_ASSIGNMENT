@@ -1,0 +1,49 @@
+---
+title: "Developing Data Product - Week 4 Assignment"
+author: "Niharika"
+date: "7 April 2018"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Introduction to Shiny App
+
+- In this enclosed shiny app, iris data is used for data analysis.
+- the graph of sepal length and sepal width is plotted with a UI to change the number of 
+ instances to be plotted and max and min values of the x and y used in the graph. 
+ 
+
+## What does the App do?
+
+In this app, A slider is placed in sliderPanel which can be used to set the maximum and minimum values of the x and y axes. In mainPanel, a graph is made sepal length v/s sepal width. 
+
+```{r results='hide', message=FALSE, warning=FALSE}
+library(UsingR)
+data("iris")
+```
+
+## Summary of The Galton Data
+
+```{r echo=TRUE}
+head(iris, 5)
+summary(iris)
+```
+
+## Plot Used in The Shiny App
+
+```{r echo=TRUE}
+plot(iris$Sepal.Length, iris$Sepal.Width,  xlim = c(2, 10), ylim = c(0,6))
+```
+
+## Instructions for Usage
+
+- Clone the code using 'git clone https://github.com/Niharika1203/DDP_WEEK4_ASSIGNMENT.git  'YOURDIRECTORY'
+- Load your RStudio
+- Set your working directory to YOURDIRECTORY using setwd("YOURDIRECTORY")
+- Load the Shiny library using library(shiny)
+- Load the UsingR library using library(UsingR)
+- Run the application using runApp()
+Step7) You will see the application in a browser.
